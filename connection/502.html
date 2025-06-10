@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--
     Error 502: Bad Gateway
-    Description: The server received an invalid response from the upstream server
+    Description: The service is down
 -->
 <html lang="en">
 <head>
@@ -114,7 +114,7 @@
 <div class="reason">
     <div class="what-happened">
         <h2 data-l10n>What happened?</h2>
-        <p class="description" data-l10n>The server received an invalid response from the upstream server</p>
+        <p class="description" data-l10n>The service is down</p>
     </div>
     <div class="what-can-i-do">
         <h2 data-l10n>What can I do?</h2>
@@ -229,7 +229,7 @@
                 break;
         }
 
-        setReasons({whatHappened: `The server received an invalid response from the upstream server`.trim(), whatToDo: whatToDo.trim()});
+        setReasons({whatHappened: `The service is down`.trim(), whatToDo: whatToDo.trim()});
     } else {
         console.warn('Cannot parse the error code:', errorCode);
     }
@@ -247,6 +247,6 @@
 </script>
 <!--
     Error 502: Bad Gateway
-    Description: The server received an invalid response from the upstream server
+    Description: The service is down
 -->
 </html>
